@@ -1,1 +1,317 @@
 
+**Analyst\'s Case File**
+
+*CTS 285 · Systems Analysis and Design · Module 1*
+
+  -----------------------------------------------------------------------
+  **System analyzed** **DataMan (Texas Instruments, 1977)**
+  ------------------- ---------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **Feature           **Number Guesser**
+  assigned**          
+  ------------------- ---------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **Source document** **The Story of DataMan --- manual transcript**
+  ------------------- ---------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **Your name**       Brandon Malave
+  ------------------- ---------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+  -----------------------------------------------------------------------
+  **Date**            08/27/2026
+  ------------------- ---------------------------------------------------
+
+  -----------------------------------------------------------------------
+
+## How to fill this out
+
+Every finding needs evidence. Evidence is an exact quoted phrase from
+the manual plus the section heading it came from. Cite sections by name
+--- "Number Guesser (Story)" or "Electro Flash · Number Guesser · Wipe
+Out (Operating Notes)." Do not cite page numbers; the manual carries two
+numbering systems that do not agree.
+
+Read both registers before you write anything. Part I describes the
+feature to a child. Part II describes it to an adult. Each contains
+information the other omits.
+
+If you cannot find evidence for something, do not guess. Put it in
+Section 8. An unknown you can name is a finding. An assumption you
+record as fact is an error.
+
+*Rows are a format, not a quota. Add rows as your evidence requires.*
+
+# 1. Purpose
+
+Why does this feature exist? What problem does it solve for the user?
+
+  ------------------------------------------------------------------------
+  **Finding**           **Evidence (exact quote)**        **Section**
+  --------------------- --------------------------------- ----------------
+  **You'll be           "As you play Number Guesser with  Number Guesser
+  sharpening your math  your family and friends (or just  (Story)
+  skills**              by yourself), You'll be           
+                        sharpening your math skills."     
+
+  **Helps teach the     "Number Guesser helps to teach    Number Guesser
+  important basic       the important basic concept of    (Operating
+  concept of number     number betweenness (the unknown   Notes)
+  betweenness... helps  secret number is always between   
+  build skills in       the two numbers shows in Data     
+  estimation and        man's display) and number logic.  
+  averaging.**          The strategy involved in getting  
+                        to the answer in the fewest tries 
+                        will help build skills in         
+                        estimation and averaging.         
+
+                                                          
+  ------------------------------------------------------------------------
+
+# 2. Users and Roles
+
+Who interacts with this feature? Where more than one person is involved,
+name what each one does --- the person who sets something up and the
+person who responds to it are different roles even when they are the
+same human being.
+
+  ---------------------------------------------------------------------------
+  **Role**         **What this role   **Evidence (exact       **Section**
+                   does**             quote)**                
+  ---------------- ------------------ ----------------------- ---------------
+  You, yourself    Presses ON and the "Just press ON and the  Number Guesser
+                   Number Guesser key Number Guesser key"     (Story)
+                   to start the                               
+                   activity                                   
+
+  You, yourself    Enters guesses in  "You enter your guess." Number Guesser
+  (Response)       response to                                (Story)
+                   Dataman's hints                            
+
+  Player/Guesser   Takes turns        "As you play Number     Number Guesser
+  (family,         entering guesses   Guesser with your       (Story)
+  friends, or                         family or friends(or    
+  solo)                               just by yourself.       
+                                      You'll be sharpening    
+                                      your math skills."      
+
+  Player/Guesser   Same role as above "Children can take      Number Guesser
+  (children)                          turns seeing who can    (Operating
+                                      find a secret number in Notes)
+                                      the least guesses"      
+  ---------------------------------------------------------------------------
+
+# 3. Inputs
+
+What information or action enters the system? Include keystrokes,
+choices, and anything the system refuses to accept.
+
+  ------------------------------------------------------------------------
+  **Input**        **Supplied    **Evidence (exact         **Section**
+                   by**          quote)**                  
+  ---------------- ------------- ------------------------- ---------------
+  ON key press     You, yourself \"Just press ON and the   Number Guesser
+                   / Player      Number Guesser key\"      (Story)
+
+  ON key press     You, yourself \"first turn DataMan on   Number Guesser
+                   / Player      with the ON key\"         (Operating
+                                                           Notes)
+
+                                                           
+
+                                                           
+  ------------------------------------------------------------------------
+
+# 4. Processing
+
+What does the system do with the input? Include any rule, limit, or
+constraint you can support.
+
+  ------------------------------------------------------------------------
+  **Rule or behavior**  **Evidence (exact quote)**        **Section**
+  --------------------- --------------------------------- ----------------
+  Dataman randomly      "I'll pick a secret number for    Number Guesser
+  selects a number      you to guess. It will be          (Story)
+  secret number within  somewhere between 9 and 100."     
+  a fixed range between                                   
+  9 and 100                                               
+
+  After each guess,     "When you do, I'll flash and show Number Guesser
+  Dataman responds with you two numbers in my face mask." (Story)
+  two numbers instead                                     
+  of directly telling                                     
+  you if you're right                                     
+  or wrong.                                               
+
+  The two numbers shown "Dataman provides a hint by       Number Guesser
+  always bracket the    displaying two numbers that the   (Operating
+  secret number,        secret number is between."        Notes)
+  narrowing where it                                      
+  could be.                                               
+
+  Dataman keeps a       "displays the total number of     Number Guesser
+  running count of      guesses that were taken"          (Operating
+  guesses across the                                      Notes)
+  road                                                    
+  ------------------------------------------------------------------------
+
+# 5. Outputs
+
+What information does the system return to the user?
+
+  ------------------------------------------------------------------------
+  **Output**       **When it      **Evidence (exact        **Section**
+                   appears**      quote)**                 
+  ---------------- -------------- ------------------------ ---------------
+  Number of        After the      "When you finally guess  Number Guesser
+  tries/guesses    player         the secret number, I'll  (Story)
+  shown at the end successfully   show you the number of   
+                   guesses the    tries it took"           
+                   secret number                           
+
+  Light show       Same trigger   \"\...and then a great   Number Guesser
+  reward           immediately    light show!\"            (Story)
+                   after the                               
+                   correct guess,                          
+                   alongside the                           
+                   try-count                               
+
+                                                           
+  ------------------------------------------------------------------------
+
+# 6. Feedback
+
+How does the system respond to the user\'s actions? Feedback tells the
+user how they are doing. An output returns information; feedback
+comments on it. If you think one behavior is both, record it once and
+say why.
+
+  ------------------------------------------------------------------------
+  **Feedback       **What it tells **Evidence (exact       **Section**
+  behavior**       the user**      quote)**                
+  ---------------- --------------- ----------------------- ---------------
+  Dataman flashes  Where the       "As you enter each      Number Guesser
+  two numbers      secret number   guess, Dataman provides (Operating
+  after each guess falls relative  a hint by displaying    Notes)
+                   to your guess   two numbers that the    
+                                   secret is between."     
+
+  Round ends when  Confirms the    "When you finally guess Number Guesser
+  the secret       guess was       the secret number, I'll (Story)
+  number is        correct.        show you the number of  
+  guessed                          tries it took, and then 
+                                   a green light show!"    
+
+                                                           
+  ------------------------------------------------------------------------
+
+# 7. Observations and Assumptions
+
+List three statements you were tempted to write as fact but could not
+fully support. For each, say what evidence you would need.
+
+  -----------------------------------------------------------------------
+  **Statement**             **Observation or **What evidence would settle
+                            assumption?**    it?**
+  ------------------------- ---------------- ----------------------------
+  "Dataman narrows the      Assumption       A quote that described the
+  range of two numbers                       hint range, or an example
+  after each guess, getting                  round showing the numbers
+  closer to the secret                       change with each guess
+  number"                                    
+
+  "Dataman rejects a guess  Assumption       A line describing an error
+  if it's outside the 9-100                  message sound, or rejection
+  range."                                    behavior for out-of-range
+                                             guess.
+
+  "Family, friends, and     Assumption       A quote assigning a
+  children each play a                       specific, different action
+  distinct role with                         to one group that isn't
+  different                                  given to the others
+  responsibilities."                         
+  -----------------------------------------------------------------------
+
+# 8. Unknowns and Open Questions
+
+What could not be determined from the manual? For each, state what you
+looked for and where you looked, so a reader knows the gap is real and
+not merely unsearched.
+
+  ------------------------------------------------------------------------
+  **Open question**        **Where I looked**    **Why the manual does not
+                                                 answer it**
+  ------------------------ --------------------- -------------------------
+  Does Datamna reject a    Number Guesser (Story Neither register
+  guess entered outside    and Operating Notes)  describes any error
+  the 9-100 range?                               response, sound, or
+                                                 rejection behavior of an
+                                                 out-of-range guess
+
+  How does Dataman         Number Guesser        Both registers state that
+  determine which two      (Story/Operating      the hint brackets the
+  numbers to display as a  Notes)                secret number, but
+  hint after each guess?                         neither explains the
+                                                 underlying logic.
+
+  Does Dataman give any    Number Guesser        Neither section describes
+  feedback for an          (Story/Guesser)       a distinct "wrong"
+  individual incorrect                           indicator for the number
+  guess, beyond the                              guesser specifically
+  recurring two-number                           
+  hint?                                          
+  ------------------------------------------------------------------------
+
+# 9. Cross-Register Note
+
+This manual documents the same feature twice. Identify one thing your
+assigned feature\'s two sections handle differently --- something one
+section states and the other omits, or something the two describe in
+ways that do not match.
+
+**What differs:**
+
+Part 1 of Dataman states purpose through story/theme while Part 2 states
+it as specific educational claims
+
+**Part I says (quote):**
+
+\"you\'ll be sharpening your math skills\"
+
+**Part II says (quote), or is silent:**
+
+helps teach the important basic concept of number betweenness\... and
+number logic. The strategy\... will help build skills in estimation and
+averaging.\"
+
+**Why this matters to an analyst:**
+
+Part 1 paints the story in a vague light using story and theme and
+convey its points but doesn't give exact objective information that part
+2 does. Analyst writing learning objective would need Part 2 since part
+1 doesn't always provide specific context, leaving more assumptions than
+actual observations
+
+# Before you submit
+
+-   Every finding has a quoted phrase, not a paraphrase.
+
+-   Every quote names the section it came from.
+
+-   I cited section headings, not page numbers.
+
+-   I read both Part I and Part II before writing.
+
+-   Section 8 is not empty.
+
+-   Nothing in Sections 1--6 is a conclusion I could not support.
