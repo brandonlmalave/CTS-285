@@ -1,1 +1,51 @@
 
+# M2 Elicitation Decision Record
+
+## Investigation Path
+1. What exactly do stakeholders mean by "students shouldn't lose their work"?
+   Evidence revealed: Teachers report that students may pause practice and return later. They want a learner's saved practice state to remain available after leaving and returning to the application.
+2. Who will use the system and in what setting?
+   Evidence revealed: The primary learner is a student practicing independently, often with a teacher or parent nearby. Exact device and access conditions have not yet been confirmed.
+3. What do parents or teachers need to understand about learner activity?
+   Evidence revealed: Adults want to understand what the learner practiced and whether progress is occurring, but stakeholders have not yet agreed on a detailed reporting dashboard.
+
+## Initial Position
+
+**Supported evidence:**
+- A learner's saved practice state must persist after they leave and return.
+- The primary user is a student working independently, with a teacher or parent nearby, not hands-on necessarily, but present.
+- Parents/teachers want visibility into what was practiced and whether progress is happening, but no format has been agreed on.
+
+**Remaining uncertainty:**
+- Exact device/access conditions
+- What form parent/teacher visibility should take
+- How long practice state needs to persist
+
+**Likely functional requirement:**
+The system must preserve a learner's practice state so that progress is not lost when the learner leaves and later returns to the application.
+
+**Likely non-functional requirement / quality constraint:**
+The system must make a learner's practice activity and progress available to a parent or teacher in a way that does not require real-time supervision.
+
+**Assumption or proposed solution I am not treating as confirmed:**
+That parent/teacher visibility should take the form of a dashboard. The case explicitly says stakeholders haven't agreed on a detailed reporting dashboard.
+
+**Why my initial position is defensible:**
+I made sure to keep the evidence and the solution separate here. The evidence tells me parents and teachers want to know what their kid practiced and whether they're actually improving, that part's solid. But nobody's confirmed what that should actually look like yet, no one said "build a dashboard," that's just the first thing that comes to mind because it's the obvious way to show that kind of info. If I wrote "the system must include a dashboard" as a requirement, I'd be assuming a solution that hasn't been agreed on. So instead I wrote the requirement around the actual need, visibility into activity and progress, and left the dashboard idea as an open question instead of locking it in.
+
+## Complication
+Students may use DataMan on school Chromebooks, phones, tablets, and home computers. Some sessions may be interrupted before intentional sign-out.
+
+**What this affects:**
+This affects the requirement I already wrote about students not losing their work. I knew that was important, but I was kind of picturing a clean scenario, like a student finishing up and closing the app on purpose. Now that I know they could be on a Chromebook, a phone, a tablet, or a home computer, and that sessions might just cut off without any warning, battery dies, Chromebook gets shut, whatever, I realize I can't design around the idea of a student "properly" signing out. If the system only saves progress when someone exits cleanly, it's going to fail in exactly the situations where saving matters most. So this complication doesn't change what I knew, it just shows me my first version of the requirement wasn't built for how this is actually going to happen in real life.
+
+**What I revised, if anything:**
+My original requirement just said progress needs to persist when a student leaves and comes back. That's still true, but I wrote it assuming they'd leave on purpose. Now I'd tighten it to make clear saving has to happen automatically, during the session, not just when they sign out:
+
+The system must automatically save a learner's practice state throughout the session, without requiring the student to manually save or exit, so progress isn't lost if the session ends unexpectedly.
+
+**Final decision and reasoning:**
+This complication doesn't throw out what I already knew, it actually confirms the core need was right, students shouldn't lose their work. But it does mean my first draft of the requirement wasn't specific enough. I assumed a "leave and return" was something intentional, like closing out properly. Now that I know sessions might just get interrupted, on a Chromebook that gets shut, a phone that loses the tab, whatever, I need to revise the requirement to say the system has to save automatically and continuously, not just when someone chooses to exit. I'm not reopening the whole assumption or deferring it, because the underlying need is still solid, I'm just tightening the requirement so it actually covers the real-world scenario instead of an idealized one.
+
+## Next Project Action
+Use this evidence to update the DataMan Requirements Register and preserve any unresolved questions as open assumptions or follow-up items.
