@@ -36,11 +36,12 @@ Each story must point to an answer in part 1. If it does not, delete it.
 
 | ID | User story | Evidence |
 |---|---|---|
-| US1 | | |
-| US2 | | |
-| US3 | | |
-| US4 | | |
-| US5 | | |
+| US1 | As a player who likes a good ending, I want more than one ending with at least one positive one, so that the way I played decides how the story turns out. | E-04 |
+| US2 | As a player who wants to care about the hero, I want the main character to start out rough but visibly grow by the end, so that I stay invested in them and don't get frustrated playing as them. | E-03 |
+| US3 | As a player who loves thrillers, I want a tense story with at least one surprise twist and a few funny moments, so that I stay hooked the whole time without it feeling too heavy. | E-01 |
+| US4 | As a player who wants my decisions to matter, I want at least one early choice to come back later and change what happens, so that I feel the story remembers what I did. | E-06 |
+| US5 | As a player who usually plays on Xbox but is open to other ways, I want to play the game on a laptop without needing to install anything special, so that I can jump in easily even though it's not my usual setup. | E-05 |
+| US6 | As a player who likes to play for a couple of hours, I want a story long enough to last 60–180 minutes, so that I get a full experience in one sitting. | E-02 |
 
 ---
 
@@ -58,6 +59,7 @@ Strong: "I can reach an ending in 4 choices or fewer."
 | US3 | | |
 | US4 | | |
 | US5 | | |
+| US6 | | |
 
 ---
 
