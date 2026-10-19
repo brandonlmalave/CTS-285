@@ -1,4 +1,3 @@
-
 # Story Brief — M3A
 
 - Your name: Brandon Malave
@@ -14,16 +13,16 @@ Interview them. Write their words. Do not argue. Do not fix.
 
 **No player?** Use Prompt 2N in `coda-prompts.md`. An AI helper interviews you. You answer as the player.
 
-- Player name:
+- Player name: Alex
 
 | ID | Question | Their answer |
 |---|---|---|
-| E-01 | What kind of stories do you like? | |
-| E-02 | How many minutes do you want to play? | |
-| E-03 | What do you not like in a story game? | |
-| E-04 | How do you want it to end? | |
-| E-05 | Where will you play (phone, laptop, terminal)? | |
-| E-06 | Do you like it when an early choice comes back later in the story, or do you prefer each choice to matter right away? | |
+| E-01 | What kind of stories do you like? | "I like stories that are balanced, I don't mind something serious for example but I think it benefits from adding humor here and there. I definitely like thrillers if we're talking about stories, so something that can keep me on the edge of my seat and has the ability to surprise me." |
+| E-02 | How many minutes do you want to play? | "I usually don't like to play a game for more than a couple hours at a time, so I think 60-180 minutes is enough." |
+| E-03 | What do you not like in a story game? | "I'm not a particular fan of stories where the main character is infuriating, just all around not a likable person. They can start out as difficult to like, but if that's the case I'd rather see them grow over time as opposed to staying the same. Actually I don't like when there isn't any character development I suppose." |
+| E-04 | How do you want it to end? | "Usually I like to have a positive ending, but I also like when there's a chance for multiple endings depending on how you have played the game." |
+| E-05 | Where will you play (phone, laptop, terminal)? | "I mean I guess I usually play on my Xbox, but I'm open to other ways to play." |
+| E-06 | Do you like it when an early choice comes back later in the story, or do you prefer each choice to matter right away? | "I like when you make a choice in a game and it comes back to make a difference later on, I think that kind of feeds into what I said previously about having an ending that is variable based on the players actions." |
 
 ---
 
